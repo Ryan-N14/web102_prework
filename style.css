@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth; 
+}
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color:#0a0a0a;
+    color: #D1D7E0;
 }
 
 #tentacles {
@@ -11,25 +15,53 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
+    background-color: #0a0a0a;
     padding: 1%;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    color: #D1D7E0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+
+.header h1 {
+    flex: 1;
+    margin: 0;
+}
+
+nav{
+    margin-left: auto;
+}
+
+nav a {
+    font-size: 25px;
+    padding: 20px;
+
+    text-decoration: none;
+    color: #D1D7E0;
+    transition: 0.3s
+}
+
+nav a:hover{
+    color: #7A57F1;
+}
+
 
 .stats-container {
     display: flex;
+    cursor: pointer;
 }
 
+
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #111112;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
     width: 100%;
     text-align: center;
+    color: #D1D7E0;
 }
 
 #num-contributions, #total-raised, #num-games {
@@ -45,31 +77,91 @@ body {
 .game-img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+    box-shadow: 0 0 2px #FFFFFF;
 }
 
 .game-card {
-    background-color: #FFFFFF;
+    background-color: #111112;
     padding: 1%;
     margin: 1%;
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    transition: all 0.3s ease 0.2ms;
 }
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 80px 2px #7A57F1;
+    transform: translateY(-10px);
 }
 
 #button-container {
     text-align: center;
 }
 
-button {
+#unfunded-btn, #funded-btn, #all-btn  {
     font-family: 'Cabin';
+    font-size: 15px;
     border: none;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    cursor: pointer;
+    background-color: #7A57F1;
+    color: #D1D7E0;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: #0a0a0a ;
+    width: 100%;
+    height: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#search-container{
+    text-align: center;
+}
+
+#search-container input{
+    width: 500px;
+    height: 50px;
+
+    border: 1px solid #7A57F1;
+    border-radius: 7px;
+
+    font-size: 18px;
+    background-color: #111112;
+    color: #D1D7E0;
+    
+}
+
+#search-container input[type=text]{
+    padding-left: 5px;
+    
+}
+#search-container button{
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+
+    background-color: #7A57F1;
+    color: #D1D7E0;
+    font-size: 17px;
 }
