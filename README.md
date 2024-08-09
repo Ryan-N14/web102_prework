@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='C:\Users\ryann\OneDrive\Desktop\Codepath trials\web102_prework\Animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Demo File](https://github.com/Ryan-N14/web102_prework/blob/main/Animation.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
